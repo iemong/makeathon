@@ -1,0 +1,109 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 62.5%;
+    word-wrap : break-word;
+    overflow-wrap : break-word;
+    -webkit-text-size-adjust: 100%;
+    background: #cccccc;
+}
+header {
+    background-color: #eb5d41;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 5%;
+    box-sizing: border-box;
+}
+h1 {
+    font-size: 36px;
+    color: #231815;
+}
+.button {
+    display: block;
+    height: 200px;
+    line-height: 200px;
+    font-size: 48px;
+    text-align: center;
+    text-decoration: none;
+    color: #eeeeee;
+    background-color: #141414;
+    border-bottom: 1px solid #767676;
+}
+.bottom {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    padding: 10px 0;
+    background-color: #111111;
+    text-align: center;
+}
+section.page:last-of-type {
+    padding-bottom: 66px;
+}
+.child_page header {
+    background-color: #eeeeee;
+    position: relative;
+}
+.child_page a {
+    position: absolute;
+    display: block;
+    width: 44px;
+    height: 38px;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 5%;
+    z-index: 2;
+}
+.child_page h1 {
+    position: absolute;
+    margin: auto;
+    text-align: center;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+}
+.child_page section {
+    background-color: #141414;
+}
+.child_page section h2 {
+    color: #eeeeee;
+    text-align: center;
+    font-size: 28px;
+    padding: 30px 0;
+}
+.child_page ul {
+}
+.child_page ul li {
+    border-bottom: 1px solid #767676;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 5%;
+}
+.child_page ul li .imageBox {
+    float: left;
+    width: 40%;
+}
+.child_page ul li .imageBox img {
+    width: 100%;
+    vertical-align: middle;
+}
+.child_page ul li .textBox {
+    float: left;
+    color: #d53a22;
+    width: 60%;
+    box-sizing: border-box;
+    padding: 0px 0px 10px 20px;
+    font-size: 20px;
+    line-height: 1;
+}
+.child_page ul li .textBox h3 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+.child_page ul li .textBox p {
+    width: 100%;
+    
+}
