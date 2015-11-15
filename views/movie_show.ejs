@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title><%= title %></title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/index.js"></script>
+</head>
+<body>
+	<iframe src="//www.youtube.com/embed/7DGAoeMXBWM%" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+	<script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+	<script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+	<script>
+	var socket = io();
+	var pageTit = $("title").text();
+	socket.on('message', function(msg){
+		var num = msg[0];
+		var message = msg[1];
+		if(num == pageTit){
+			$('iframe').attr('src', message);
+		}
+	});
+	</script>
+</body>
+</html>
