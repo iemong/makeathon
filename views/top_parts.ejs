@@ -15,33 +15,17 @@
       <section>
           <h2>select movie</h2>
           <ul>
-              <li class="clearfix">
-                  <div class="imageBox">
-                      <img src="images/dammy.png" title="//www.youtube.com/embed/x-79hDn8RCA?autoplay=1" alt="">
-                  </div>
-                  <div class="textBox">
-                      <h3>name</h3>
-                      <p>caption,caption,caption,caption,caption,caption,caption,caption,caption,caption,caption,caption,caption,caption,caption,caption,caption,caption,caption,caption,caption</p>
-                  </div>
-              </li>
-              <li class="clearfix">
-                  <div class="imageBox">
-                      <img src="images/dammy.png" title="//www.youtube.com/embed/MJqAhbhffpU?autoplay=1" alt="">
-                  </div>
-                  <div class="textBox">
-                      <h3>name</h3>
-                      <p>caption,caption,caption,caption,caption,caption,caption,caption,caption,caption,caption,caption,caption,caption,caption,caption,caption,caption,caption,caption,caption</p>
-                  </div>
-              </li>
-              <li class="clearfix">
-                  <div class="imageBox">
-                      <img src="images/dammy.png" title="//www.youtube.com/embed/LIlZCmETvsY?autoplay=1" alt="">
-                  </div>
-                  <div class="textBox">
-                      <h3>name</h3>
-                      <p>caption,caption,caption,caption,caption,caption,caption,caption,caption,caption,caption,caption,caption,caption,caption,caption,caption,caption,caption,caption,caption</p>
-                  </div>
-              </li>
+              <% for(var i = 0; i < names.length; i++){ %>
+                  <li class="clearfix">
+                      <div class="imageBox">
+                          <img src="<%= images[i] %>" title="<%= urls[i] %>" alt="">
+                      </div>
+                      <div class="textBox">
+                          <h3><%= names[i] %></h3>
+                          <p><%= captions[i] %></p>
+                      </div>
+                  </li>
+              <% } %>
           </ul>
       </section>
       <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
