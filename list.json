@@ -2,51 +2,51 @@
   "movieList":[
     {
       "id": 1,
-      "name":"Shimada Mayu",
-      "image":"images/dammy.png",
-      "url":"//www.youtube.com/embed/x-79hDn8RCA?autoplay=1",
+      "name":"でんぱ組.inc",
+      "image":"http://i.ytimg.com/vi/x-79hDn8RCA/mqdefault.jpg",
+      "url":"//www.youtube.com/embed/x-79hDn8RCA?autoplay=1&rel=0&loop=1&controls=0&wmode=transparent&playlist=x-79hDn8RCA",
       "caption":"あ"
     },
     {
       "id": 2,
-      "name":"Shimada Mayu",
-      "image":"images/dammy.png",
-      "url":"//www.youtube.com/embed/MJqAhbhffpU?autoplay=1",
+      "name":"tofubeats",
+      "image":"http://i.ytimg.com/vi/MJqAhbhffpU/mqdefault.jpg",
+      "url":"//www.youtube.com/embed/MJqAhbhffpU?autoplay=1&rel=0&loop=1&controls=0&wmode=transparent&playlist=MJqAhbhffpU",
       "caption":"い"
     },
     {
       "id": 3,
-      "name":"Shimada Mayu",
-      "image":"images/dammy.png",
-      "url":"//www.youtube.com/embed/LIlZCmETvsY?autoplay=1",
+      "name":"サカナクション",
+      "image":"http://i.ytimg.com/vi/LIlZCmETvsY/mqdefault.jpg",
+      "url":"//www.youtube.com/embed/LIlZCmETvsY?autoplay=1&rel=0&loop=1&controls=0&wmode=transparent&playlist=LIlZCmETvsY",
       "caption":"う"
     },
     {
       "id": 4,
-      "name":"Shimada Mayu",
-      "image":"images/dammy.png",
-      "url":"//www.youtube.com/embed/iXREolaN934?autoplay=1",
+      "name":"水曜日のカンパネラ",
+      "image":"http://i.ytimg.com/vi/iXREolaN934/mqdefault.jpg",
+      "url":"//www.youtube.com/embed/iXREolaN934?autoplay=1&playlist=iXREolaN934",
       "caption":"え"
     },
     {
       "id": 5,
-      "name":"Shimada Mayu",
-      "image":"images/dammy.png",
-      "url":"//www.youtube.com/embed/2bJ49dOSP9o?autoplay=1",
+      "name":"きゃりーぱみゅぱみゅ",
+      "image":"http://i.ytimg.com/vi/2bJ49dOSP9o/mqdefault.jpg",
+      "url":"//www.youtube.com/embed/2bJ49dOSP9o?autoplay=1&rel=0&loop=1&controls=0&wmode=transparent&playlist=2bJ49dOSP9o",
       "caption":"お"
     },
     {
       "id": 6,
-      "name":"Shimada Mayu",
-      "image":"images/dammy.png",
-      "url":"//www.youtube.com/embed/LZ6-PfPx0EM?autoplay=1",
+      "name":"CAPSULE",
+      "image":"http://i.ytimg.com/vi/LZ6-PfPx0EM/mqdefault.jpg",
+      "url":"//www.youtube.com/embed/LZ6-PfPx0EM?autoplay=1&rel=0&loop=1&controls=0&wmode=transparent&playlist=LZ6-PfPx0EM",
       "caption":"か"
     },
     {
       "id": 7,
-      "name":"Shimada Mayu",
-      "image":"images/dammy.png",
-      "url":"//www.youtube.com/embed/pWY-S_wGlOs?autoplay=1",
+      "name":"清竜人25",
+      "image":"http://i.ytimg.com/vi/pWY-S_wGlOs/mqdefault.jpg",
+      "url":"//www.youtube.com/embed/pWY-S_wGlOs?autoplay=1&rel=0&loop=1&controls=0&wmode=transparent&playlist=pWY-S_wGlOs",
       "caption":"き"
     }
   ]

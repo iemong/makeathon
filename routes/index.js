@@ -1,6 +1,10 @@
 var express = require('express');
 var router = express.Router();
 var socketIO = require('socket.io');
+
+/*-----------------------------------
+    json処理
+-----------------------------------*/
 var json = require('../list.json');
 var nameList = [];
 var imageList = [];
@@ -12,6 +16,7 @@ for(var i = 0; i < Object.keys(json.movieList).length; i++){
     urlList.push(json.movieList[i].url);
     captionList.push(json.movieList[i].caption);
 }
+
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index', {

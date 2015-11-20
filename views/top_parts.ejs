@@ -31,6 +31,9 @@
       <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
       <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
       <script>
+        /*-----------------------------------
+            socket.IOの分配処理
+        -----------------------------------*/
         var socket = io();
         $(".imageBox").on('click', function(){
             var imageName = $(this).find('img').attr('title');
