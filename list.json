@@ -4,6 +4,7 @@
       "id": 1,
       "name":"でんぱ組.inc",
       "image":"http://i.ytimg.com/vi/x-79hDn8RCA/mqdefault.jpg",
+      "imageNum": 10,
       "url":"//www.youtube.com/embed/x-79hDn8RCA?autoplay=1&rel=0&loop=1&controls=0&wmode=transparent&playlist=x-79hDn8RCA",
       "caption":"あ"
     },
@@ -11,6 +12,7 @@
       "id": 2,
       "name":"tofubeats",
       "image":"http://i.ytimg.com/vi/MJqAhbhffpU/mqdefault.jpg",
+      "imageNum": 10,
       "url":"//www.youtube.com/embed/MJqAhbhffpU?autoplay=1&rel=0&loop=1&controls=0&wmode=transparent&playlist=MJqAhbhffpU",
       "caption":"い"
     },
@@ -18,6 +20,7 @@
       "id": 3,
       "name":"サカナクション",
       "image":"http://i.ytimg.com/vi/LIlZCmETvsY/mqdefault.jpg",
+      "imageNum": 10,
       "url":"//www.youtube.com/embed/LIlZCmETvsY?autoplay=1&rel=0&loop=1&controls=0&wmode=transparent&playlist=LIlZCmETvsY",
       "caption":"う"
     },
@@ -25,6 +28,7 @@
       "id": 4,
       "name":"水曜日のカンパネラ",
       "image":"http://i.ytimg.com/vi/iXREolaN934/mqdefault.jpg",
+      "imageNum": 10,
       "url":"//www.youtube.com/embed/iXREolaN934?autoplay=1&playlist=iXREolaN934",
       "caption":"え"
     },
@@ -32,6 +36,7 @@
       "id": 5,
       "name":"きゃりーぱみゅぱみゅ",
       "image":"http://i.ytimg.com/vi/2bJ49dOSP9o/mqdefault.jpg",
+      "imageNum": 10,
       "url":"//www.youtube.com/embed/2bJ49dOSP9o?autoplay=1&rel=0&loop=1&controls=0&wmode=transparent&playlist=2bJ49dOSP9o",
       "caption":"お"
     },
@@ -39,6 +44,7 @@
       "id": 6,
       "name":"CAPSULE",
       "image":"http://i.ytimg.com/vi/LZ6-PfPx0EM/mqdefault.jpg",
+      "imageNum": 10,
       "url":"//www.youtube.com/embed/LZ6-PfPx0EM?autoplay=1&rel=0&loop=1&controls=0&wmode=transparent&playlist=LZ6-PfPx0EM",
       "caption":"か"
     },
@@ -46,6 +52,7 @@
       "id": 7,
       "name":"清竜人25",
       "image":"http://i.ytimg.com/vi/pWY-S_wGlOs/mqdefault.jpg",
+      "imageNum": 10,
       "url":"//www.youtube.com/embed/pWY-S_wGlOs?autoplay=1&rel=0&loop=1&controls=0&wmode=transparent&playlist=pWY-S_wGlOs",
       "caption":"き"
     }

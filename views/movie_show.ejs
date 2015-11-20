@@ -4,17 +4,15 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
 	<title><%= title %></title>
-	<link rel="stylesheet" href="css/style.css">
-	<script src="js/index.js"></script>
 </head>
 <body>
 	<!-- <iframe style="z-index: -1;min-width: 1024px;position: fixed;top:0;left:0;" width="100%" height="100%" src="//www.youtube.com/embed/7DGAoeMXBWM%" frameborder="0" allowfullscreen></iframe> -->
 	<div class="canimation">
-	   <img src="./butterfly/butterfly_00000.png"/>
+	   <img src="/images/butterfly/butterfly_00000.png"/>
 	</div>
 	<script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
 	<script src="http://code.jquery.com/jquery-1.11.1.js"></script>
-	<script src="./jquery.canimate.js"></script>
+	<script src="/javascripts/jquery.canimate.js"></script>
 	<script>
 	var socket = io();
 	var pageTit = $("title").text();
@@ -25,12 +23,14 @@
 			$('iframe').attr('src', message);
 		}
 	});
-	$('.canimation').canimate({
-       totalFrames: 239,
-       imagePrefix: 'butterfly_0',
-       fps: 30,
-       preload:true
-    });
+	$(document).ready(function(){
+	   $('.canimation').canimate({
+	      totalFrames: 239,
+	      imagePrefix: 'butterfly_0',
+	      fps: 30,
+	      preload:true
+	   });
+	});
 	</script>
 </body>
 </html>
