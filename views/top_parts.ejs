@@ -37,9 +37,10 @@
         var socket = io();
         $(".imageBox").on('click', function(){
             var imageName = $(this).find('img').attr('title');
+            var imageNumber = $(this).find('img').attr('data-num')
             var pageTit = $('h1').text();
-            var dataArray = [pageTit, imageName];
-            socket.emit('message', dataArray);
+            var dataArray = [pageTit, imageName, imageNumber];
+            socket.emit('message_from_client', dataArray);
         });
 
       </script>

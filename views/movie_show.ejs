@@ -4,11 +4,11 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
 	<title><%= title %></title>
+	<link rel="stylesheet" href="/stylesheets/movie.css">
 </head>
 <body>
-	<!-- <iframe style="z-index: -1;min-width: 1024px;position: fixed;top:0;left:0;" width="100%" height="100%" src="//www.youtube.com/embed/7DGAoeMXBWM%" frameborder="0" allowfullscreen></iframe> -->
 	<div class="canimation">
-	   <img src="/images/butterfly/butterfly_00000.png"/>
+	   <img src=""/>
 	</div>
 	<script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
 	<script src="http://code.jquery.com/jquery-1.11.1.js"></script>
@@ -16,20 +16,31 @@
 	<script>
 	var socket = io();
 	var pageTit = $("title").text();
-	socket.on('message', function(msg){
-		var num = msg[0];
-		var message = msg[1];
+	var num,message,prefix,number;
+
+	$(document).ready( function(){
+		socket.emit('load','loaded');
+ 	});
+	socket.on('message_from_server', function(msg){
+		num = msg[0];
 		if(num == pageTit){
-			$('iframe').attr('src', message);
+			window.location.reload();
 		}
 	});
-	$(document).ready(function(){
-	   $('.canimation').canimate({
-	      totalFrames: 239,
-	      imagePrefix: 'butterfly_0',
-	      fps: 30,
-	      preload:true
-	   });
+	socket.on('last_massage', function(msg){
+		num = msg[0];
+		message = msg[1];
+		prefix = message.split('0');
+		number = msg[2];
+		if(num == pageTit){
+			$('img').attr('src', message);
+			$('.canimation').canimate({
+	 	      totalFrames: number,
+	 	      imagePrefix: prefix[0],
+	 	      fps: 30,
+			  loop: true
+		  	});
+		}
 	});
 	</script>
 </body>
