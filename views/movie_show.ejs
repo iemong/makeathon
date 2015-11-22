@@ -7,8 +7,10 @@
 	<link rel="stylesheet" href="/stylesheets/movie.css">
 </head>
 <body>
+	<div id="wrapper">
 	<div class="canimation">
-	   <img src=""/>
+	   <img src="" id="canimateImage" />
+	</div>
 	</div>
 	<script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
 	<script src="http://code.jquery.com/jquery-1.11.1.js"></script>
@@ -17,10 +19,17 @@
 	var socket = io();
 	var pageTit = $("title").text();
 	var num,message,prefix,number;
-
+	var windowHeight,imageHeight;
 	$(document).ready( function(){
 		socket.emit('load','loaded');
  	});
+	$("img").one('load', function(){
+		windowHeight = $(window).outerHeight(true);
+		$("#wrapper").css({height: windowHeight + 'px'});
+		imageHeight = $("#canimateImage").height();
+		$('.canimation').css({height: imageHeight + 'px'});
+		console.log(imageHeight);
+	});
 	socket.on('message_from_server', function(msg){
 		num = msg[0];
 		if(num == pageTit){
@@ -37,7 +46,7 @@
 			$('.canimation').canimate({
 	 	      totalFrames: number,
 	 	      imagePrefix: prefix[0],
-	 	      fps: 30,
+	 	      fps: 24,
 			  loop: true,
 			  preload: true
 		  	});
