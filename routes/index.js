@@ -28,9 +28,9 @@ router.get('/', function(req, res, next) {
       number: items
   });
 });
-router.get('/page0', function(req, res, next){
+router.get('/device1', function(req, res, next){
     res.render('top_parts', {
-        title:     'page0',
+        title:     'device1',
         names:     nameList,
         images:    imageList,
         imageNums: imageNumList,
@@ -38,9 +38,9 @@ router.get('/page0', function(req, res, next){
         captions:  captionList
     });
 })
-router.get('/page1', function(req, res, next){
+router.get('/device2', function(req, res, next){
     res.render('top_parts', {
-        title:     'page1',
+        title:     'device2',
         names:     nameList,
         images:    imageList,
         imageNums: imageNumList,
@@ -48,9 +48,9 @@ router.get('/page1', function(req, res, next){
         captions:  captionList
     });
 })
-router.get('/page2', function(req, res, next){
+router.get('/device3', function(req, res, next){
     res.render('top_parts', {
-        title:     'page2',
+        title:     'device3',
         names:     nameList,
         images:    imageList,
         imageNums: imageNumList,
@@ -58,9 +58,9 @@ router.get('/page2', function(req, res, next){
         captions:  captionList
     });
 })
-router.get('/page3', function(req, res, next){
+router.get('/device4', function(req, res, next){
     res.render('top_parts', {
-        title:     'page3',
+        title:     'device4',
         names:     nameList,
         images:    imageList,
         imageNums: imageNumList,
@@ -68,29 +68,34 @@ router.get('/page3', function(req, res, next){
         captions:  captionList
     });
 })
-router.get('/page4', function(req, res, next){
-    res.render('top_parts', {
-        title:     'page4',
-        names:     nameList,
-        images:    imageList,
-        imageNums: imageNumList,
-        urls:      urlList,
-        captions:  captionList
-    });
-})
-router.get('/movie/page1', function(req, res, next) {
+// router.get('/device5', function(req, res, next){
+//     res.render('top_parts', {
+//         title:     'device5',
+//         names:     nameList,
+//         images:    imageList,
+//         imageNums: imageNumList,
+//         urls:      urlList,
+//         captions:  captionList
+//     });
+// })
+router.get('/movie/device1', function(req, res, next) {
     res.render('movie_show', {
-        title: 'page1'
+        title: 'device1'
     });
 });
-router.get('/movie/page2', function(req, res, next) {
+router.get('/movie/device2', function(req, res, next) {
     res.render('movie_show', {
-        title: 'page2'
+        title: 'device2'
     });
 });
-router.get('/movie/page3', function(req, res, next) {
+router.get('/movie/device3', function(req, res, next) {
     res.render('movie_show', {
-        title: 'page3'
+        title: 'device3'
+    });
+});
+router.get('/movie/device4', function(req, res, next) {
+    res.render('movie_show', {
+        title: 'device4'
     });
 });
 

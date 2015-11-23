@@ -11,22 +11,10 @@
       <header>
           <h1>Holo</h1>
       </header>
-      <% for(var i = 0; i < number; i++){ %>
+      <% for(var i = 1; i < number; i++){ %>
           <section class="page">
-              <a href="/page<%= i %>" class="button" id="page0<%= i %>">Page<%= i %></a>
+              <a href="/device<%= i %>" class="button" id="device0<%= i %>">device<%= i %></a>
           </section>
       <% } %>
-      <!-- <section class="page">
-          <a href="/page1" class="button" id="page01">Page1</a>
-      </section>
-      <section class="page">
-          <a href="/page2" class="button" id="page02">Page2</a>
-      </section>
-      <section class="page">
-          <a href="/page3" class="button" id="page03">Page3</a>
-      </section> -->
-      <div class="bottom">
-          <img src="./images/arrow.png" width="38" height="44" alt="">
-      </div>
   </body>
 </html>

@@ -32,13 +32,14 @@ h1 {
 .bottom {
     position: fixed;
     width: 100%;
-    bottom: 0;
+    height: 66px;
+    bottom: 0px;
     padding: 10px 0;
     background-color: #111111;
     text-align: center;
 }
 section.page:last-of-type {
-    padding-bottom: 66px;
+    padding-bottom: 33px;
 }
 .child_page header {
     background-color: #eeeeee;
@@ -105,5 +106,5 @@ section.page:last-of-type {
 }
 .child_page ul li .textBox p {
     width: 100%;
-    
+
 }
